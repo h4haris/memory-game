@@ -1,0 +1,79 @@
+body {
+    background: oldlace;
+    padding: 20px;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 100px);
+    grid-auto-rows: 100px;
+    grid-gap: 15px;
+    justify-content: center;
+    perspective: 800px;
+    max-width: 905px;
+    margin: 0 auto;
+}
+
+.victoryState {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restartButton {
+    background: #010124;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.restartButton.hide {
+    display: none;
+}
+
+img.card {
+    width: 100px;
+    height: 100px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 0 #333;
+    cursor: pointer;
+    animation: flipUp .5s forwards;
+}
+
+.card.down {
+    animation: flipDown .5s forwards;
+}
+
+@keyframes flipDown {
+    0% {
+        transform: rotateY(0deg);
+        box-shadow: 5px 5px 0 0 #333;
+    }
+    100% {
+        transform: rotateY(180deg);
+        box-shadow: -5px 5px 0 0 #333;
+    }
+}
+
+@keyframes flipUp {
+    0% {
+        transform: rotateY(180deg);
+        box-shadow: -5px 5px 0 0 #333;
+    }
+    100% {
+        transform: rotateY(0deg);
+        box-shadow: 5px 5px 0 0 #333;
+    }
+}
