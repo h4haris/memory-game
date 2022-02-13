@@ -7,7 +7,7 @@ Memory Game, also known as the Concentration card game or Matching Game, is a si
 - You will start by flipping over one card
 - If the next card you flip matches, you get +1 to your score
 - These cards then appear flipped
-- If the next card you flip does not match, then those cards flip back
+- If the next card you flip does not match, then both cards flip back
 - The game continues until you match all the cards on the board
 - At then end, you can see total score in total performed moves
 - You can restart game once finished
