@@ -3,7 +3,7 @@ A Grid-based Memory game in vanilla JavaScript, HTML and CSS
 
 Memory Game, also known as the Concentration card game or Matching Game, is a simple card game where you need to match pairs by turn over 2 cards at a time.
 
-[Live URL](https://h4haris.github.io/memory-game) 
+Live URL [here](https://h4haris.github.io/memory-game) 
 
 ![demo](images/screen.JPG)
 
